@@ -1,0 +1,299 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.logo {
+  width: 200px;
+  height: 100%;
+  display: inline-block;
+}
+
+@font-face {
+  src: url(/fonts/OpenSans-Bold.ttf);
+  font-family: Open Sans Bold;
+}
+
+@font-face {
+  src: url(/fonts/OpenSans-Regular.ttf);
+  font-family: Open Sans;
+}
+
+a > img {
+  top: 13px;
+  position: absolute;
+  height: 48px;
+  max-width: 250px;
+}
+
+@font-face {
+  src: url(fonts/Metropolis-Bold.otf);
+  font-family: Metropolis;
+}
+
+@font-face {
+  src: url(fonts/Metropolis-Medium.otf);
+  font-family: MetropolisMedium;
+}
+
+@font-face {
+  src: url(fonts/metropolis.regular.otf);
+  font-family: MetropolisRegular;
+}
+
+nav {
+  position: relative;
+  height: 73px;
+  color: #191e1e;
+}
+
+nav > div {
+  display: inline-block;
+}
+
+.list {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  min-width: 590px;
+  right: 60px;
+}
+
+.list :last-child {
+  margin-right: 0px;
+}
+
+.list > div {
+  padding-top: 27px;
+  height: 100%;
+  margin-right: 30px;
+  font-size: 0.9375rem;
+  display: inline-block;
+  font-family: Open Sans Bold;
+  font-weight: 700;
+  -webkit-user-select: none;
+}
+
+.nav_cont a:hover {
+  color: #6db33f;
+}
+
+.projects {
+  box-sizing: border-box;
+  width: 1180px;
+  height: 390px;
+  padding: 105px 20px 90px 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text_name {
+  font-family: Metropolis, sans-serif;
+  font-size: 3.75rem;
+  color: #191e1e;
+  margin-right: 25%;
+}
+
+.text {
+  margin-top: 24px;
+  display: block;
+  font-family: MetropolisRegular;
+  font-size: 24px;
+  line-height: 41px;
+}
+
+hr {
+  margin: 0px;
+  left: -1px;
+  position: absolute;
+  top: 73px;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: rgb(235, 242, 242);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 880px;
+  background-color: rgb(235, 242, 242);
+  overflow: hidden;
+}
+
+.container2 {
+  width: 1180px;
+  display: block;
+  margin: 0px auto 0px auto;
+  padding-left: 220px;
+  box-sizing: border-box;
+  padding-top: 35px;
+}
+
+.container2 > div {
+  position: relative;
+  width: 440px;
+  height: 250px;
+  background-color: white;
+  margin: 0px;
+  display: inline-block;
+  margin: 13px;
+  border-radius: 5px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border: 1px solid #d9e9e9;
+  transition: 0.2s ease-in-out; 
+  -webkit-user-select: none;
+}
+
+.container2 > div:hover {
+  transition: all 0.2s, transform 0.2s;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px 0 rgb(108 135 135 / 20%);
+  cursor: pointer;
+}
+
+.container2 > div > div > img {
+  width: 69px;
+  height: 60px;
+}
+
+.container2 > div > div {
+  position: absolute;
+  width: 383px;
+  height: 170px;
+}
+
+.container2 > div > div :nth-child(2) {
+  margin: 0px;
+  height: 24px;
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  font-family: MetropolisMedium;
+  font-size: 24px;
+}
+
+.container2 > div > div :nth-child(3) {
+  position: absolute;
+  width: 292px;
+  font-family: Open Sans;
+  font-size: 16px;
+  left: 90px;
+  top: 50px;
+  line-height: 27px;
+  color: #333333;
+}
+
+.nav_cont {
+  position: relative;
+  display: block;
+  width: 1180px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ul {
+  position: absolute;
+  width: 230px;
+  background: white;
+  font-family: Open Sans;
+  padding: 30px 0 30px 30px;
+  box-sizing: border-box;
+  top: 72px;
+  border-radius: 5px;
+  z-index: 99;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s opacity, 0.2s visibility;
+}
+li {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+.list img {
+  margin-left: 3px;
+  height: 10px;
+  opacity: 0.7;
+}
+
+nav a:visited {
+  color: #191e1e;
+}
+
+.community {
+  position: absolute;
+  right: -70px;
+}
+
+.whyspring {
+  position: absolute;
+  z-index: 100;
+  left: 0px;
+}
+
+.learn {
+  position: absolute;
+  z-index: 101;
+  left: 120px;
+}
+
+.project {
+  position: absolute;
+  z-index: 102;
+  left: 200px;
+}
+
+.list :nth-child(1):hover ~ .whyspring {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.list :nth-child(2):hover ~ .learn {
+  opacity: 1;
+  visibility: visible;
+}
+.list :nth-child(3):hover ~ .project {
+  opacity: 1;
+  visibility: visible;
+}
+.list :nth-child(6):hover ~ .community {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+  .list {
+    position: absolute;
+    right: 60px;
+  }
+
+  .nav_cont {
+    width: 100%;
+  }
+  .projects {
+    width: 100%;
+  }
+  .container2 {
+    width: 950px;
+    padding-left: 0px;
+    display: block;
+  }
+  ul {
+    width: 210px;
+  }
+  .community {
+    right: -40px;
+  }
+}
