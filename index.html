@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spring | Projects</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="nav">
         <div class="navcont">
           <div class="navcont__logo">
             <a href="#"
@@ -19,21 +19,25 @@
             /></a>
           </div>
           <div class="navcont__list">
-            <div>Why Spring
-              <img src="/images/arrow-down-sign-to-navigate.svg" alt="">
+            <div>
+              Why Spring
+              <img src="/images/arrow-down-sign-to-navigate.svg" alt="" />
             </div>
-            <div>Learn
-              <img src="/images/arrow-down-sign-to-navigate.svg" alt="">
+            <div>
+              Learn
+              <img src="/images/arrow-down-sign-to-navigate.svg" alt="" />
             </div>
-            <div>Projects
-              <img src="/images/arrow-down-sign-to-navigate.svg" alt="">
+            <div>
+              Projects
+              <img src="/images/arrow-down-sign-to-navigate.svg" alt="" />
             </div>
             <div><a href="#"> Training</a></div>
             <div><a href="#"> Support</a></div>
-            <div>Community
-              <img src="/images/arrow-down-sign-to-navigate.svg" alt="">
+            <div>
+              Community
+              <img src="/images/arrow-down-sign-to-navigate.svg" alt="" />
             </div>
-            
+
             <ul class="navcont__whyspring">
               <li><a href="#"> Overview</a></li>
               <li><a href="#"> Microservices</a></li>
@@ -43,7 +47,6 @@
               <li><a href="#"> Web Applications</a></li>
               <li><a href="#"> Serverless</a></li>
               <li><a href="#"> Batch</a></li>
-            
             </ul>
 
             <ul class="navcont__learn">
@@ -52,7 +55,7 @@
               <li><a href="#">Guides</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
-  
+
             <ul class="navcont__project">
               <li><a href="#">Overview</a></li>
               <li><a href="#">Spring Boot</a></li>
@@ -64,32 +67,38 @@
               <li><a href="#">Spring Batch</a></li>
               <li><a href="#">Spring Security</a></li>
             </ul>
-  
+
             <ul class="navcont__community">
               <li><a href="#">Overview</a></li>
               <li><a href="#">Events</a></li>
               <li><a href="#">Team</a></li>
             </ul>
-
           </div>
-        
-       
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+         
         </div>
+        <hr />
       </nav>
     </header>
-    <hr />
+
     <div class="projects">
-      <div class="projects__textname">Projects</div>
-      <div class="projects__text">
-        From configuration to security, web apps to big data—whatever the
-        infrastructure needs of your application may be, there is a Spring
-        Project to help you build it. Start small and use just what you
-        need—Spring is modular by design.
+      <div class="projects__cont">
+        <div class="projects__textname">Projects</div>
+        <div class="projects__text">
+          From configuration to security, web apps to big data—whatever the
+          infrastructure needs of your application may be, there is a Spring
+          Project to help you build it. Start small and use just what you
+          need—Spring is modular by design.
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="container__main">
-        <div>
+        <div class="container__item">
           <div>
             <img
               src="images/spring-boot-7f2e24fb962501672cc91ccd285ed2ba.svg"
@@ -102,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="container__item">
           <div>
             <img
               src="images/spring-framework-640ad1b04f7efa89e0f0f7353e6b5e02.svg"
@@ -115,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="container__item">
           <div>
             <img
               src="images/spring-data-79cc203ed8c54191215a60f9e5dc638f.svg"
@@ -126,9 +135,9 @@
               Provides a consistent approach to data access – relational,
               non-relational, map-reduce, and beyond.
             </div>
-          </div>
+          </div >
         </div>
-        <div>
+        <div class="container__item">
           <div>
             <img
               src="images/spring-cloud-81fe04ab129ab99da0e7c7115bb09920.svg"
@@ -141,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="container__item">
           <div>
             <img
               src="images/spring-data-flow-9eb1733b76b6cd62cbdd9bc9a2b04e56.svg"
@@ -154,7 +163,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="container__item">
           <div>
             <img
               src="images/spring-security-b712a4cdb778e72eb28b8c55ec39dbd1.svg"
