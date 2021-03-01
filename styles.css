@@ -82,7 +82,7 @@
   -moz-user-select: none;
 }
 
-.hamburger {
+.navcont__hamburger {
   width: 40px;
   height: 40px;
   display: none;
@@ -91,7 +91,7 @@
   flex-direction: column;
 }
 
-.hamburger > div {
+.navcont__hamburger > div {
   width: 19px;
   height: 3px;
   background: black;
@@ -99,16 +99,16 @@
   transition: background 0.2s ease;
 }
 
-.hamburger:hover {
+.navcont__hamburger:hover {
   cursor: pointer;
 }
 
-.hamburger:hover > div {
+.navcont__hamburger:hover > div {
   background-color: #6db33f;
 }
 
 .navcont__list a:hover {
-  color: #6db33f;
+  color: #6db33f !important;
 }
 
 .projects {
@@ -192,12 +192,12 @@
   cursor: pointer;
 }
 
-.container__item > div > img {
+.container__body > img {
   width: 69px;
   height: 60px;
 }
 
-.container__item > div {
+.container__body {
   width: 100%;
   height: 170px;
 }
@@ -211,7 +211,7 @@
   font-size: 24px;
 }
 
-.container__item > div :nth-child(3) {
+.container__text {
   width: 75%;
   font-family: Open Sans;
   font-size: 16px;
@@ -282,7 +282,7 @@
   left: 200px;
 }
 
-.navcont__list :nth-child(1):hover ~ .navcont__whyspring {
+.navcont__whyspring_button:hover ~ .navcont__whyspring {
   opacity: 1;
   visibility: visible;
 }
@@ -291,15 +291,15 @@
   visibility: visible;
   opacity: 1;
 }
-.navcont__list :nth-child(2):hover ~ .navcont__learn {
+.navcont__learn_button:hover ~ .navcont__learn {
   opacity: 1;
   visibility: visible;
 }
-.navcont__list :nth-child(3):hover ~ .navcont__project {
+.navcont__projects_button:hover ~ .navcont__project {
   opacity: 1;
   visibility: visible;
 }
-.navcont__list :nth-child(6):hover ~ .navcont__community {
+.navcont__community_button:hover ~ .navcont__community {
   opacity: 1;
   visibility: visible;
 }
@@ -337,7 +337,7 @@
   .navcont__list {
     display: none;
   }
-  .hamburger {
+  .navcont__hamburger {
     display: flex;
   }
   .projects {
@@ -387,5 +387,11 @@
     font-size: 20px;
   }
 
+}
 
+
+@media screen and (max-width: 800px){
+    .projects__text {
+    font-size: 17px;
+  }
 }
