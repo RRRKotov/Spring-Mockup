@@ -230,9 +230,13 @@
 .input {
   display: flex;
   justify-content: center;
+  margin-left: 200px;
+
+
 }
 
 .input input{
+  
   outline: none;
   padding: 10px 5px;
   font-family: MetropolisRegular;
@@ -357,6 +361,7 @@
 
 .container__noresults {
   font-family: MetropolisMedium;
+  margin-left:  280px;
 }
 
 .navcont {
@@ -470,6 +475,12 @@
   }
   .navcont__logo img {
     width: 115px;
+  }
+  .container__noresults{
+    margin: 0 auto;
+  }
+  .input{
+    margin: 0 auto;
   }
 }
 
