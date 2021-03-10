@@ -67,6 +67,12 @@ let noResults = document.createElement("div");
 noResults.classList.add("container__noresults");
 noResults.innerHTML = "No results(( Try again!";
 
+data.forEach((item) => {
+  img.setAttribute("src", item.img);
+  container__name.innerHTML = item.title;
+  container__text.innerHTML = item.content;
+  container__main.appendChild(container__item.cloneNode(true));
+})
 function inputChange(e) {
   container__main.innerHTML = "";
 
