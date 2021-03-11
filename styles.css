@@ -133,12 +133,12 @@
 }
 
 @font-face {
-  src: url(/fonts/OpenSans-Bold.ttf);
+  src: url(fonts/OpenSans-Bold.ttf);
   font-family: OpenSansBold;
 }
 
 @font-face {
-  src: url(/fonts/open-sans.otf);
+  src: url(fonts/open-sans.otf);
   font-family: OpenSans;
 }
 
